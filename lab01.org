@@ -27,6 +27,8 @@ To add insult to injury we don't know if the armed bomb weighs less or more on t
 But there is yet another catch the weighing system only have two charges left, but it can weight any number of bombs at once.
 Your job is to tell which 1 bomb out of the 9 bombs is armed while only using the weighing machine twice.
 
+If the heavier bomb is the armed bomb then we can split the bombs into gropus of 3. We pick two groups to weigh. If one group is heavier then the armed bomb is in there. If they are the same then the armed bomb is in the one we left out. Take the selected and perform the same analysis just using one bomb on each side of the scale.
+
 * TODO The BEAST
 The Shoe Shack has made several top-dollar sales today. 
 Using only the clues below, match each customer to their foot size, 
