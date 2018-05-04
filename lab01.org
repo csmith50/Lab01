@@ -55,13 +55,13 @@ No option in any category will ever be used more than once.
 Solution
 
 | Shoe Sizes | Customers | Brands | Prices |
-|          4 |           |        |        |
-|          5 |           |        |        |
-|          6 |           |        |        |
-|          7 |           |        |        |
-|          8 |           |        |        |
-|          9 |           |        |        |
-|         10 |           |        |        |
+|          4 |      Lucia|Tinghill|    $155|
+|          5 |    Natalie|Abbot Hill|  $185|
+|          6 |   Francine|Graffetz|    $215|
+|          7 | Customer X|Schtillet|   $125|
+|          8 |       Ruth|Wiliford|    $260|
+|          9 |    Vanessa| Cormano|    $245|
+|         10 |      Marie|Manzarita|   $170|
 
 * TODO Exercises
 In 01-ponder do every third exercise. 
@@ -69,6 +69,137 @@ That is if you start at the first or 1st then you need to do 4th,
 but if you start at 3rd then you need to do the 6th.
 
 You must put them in this file!
+
+** TODO UCA
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:46]--[2018-05-04 Fri 15:51] =>  0:05
+   :END:
+#+begin_note
+  Start your exercise warmup by thinking up three examples and three
+  non-examples of propositions. Make them pithy.
+#+end_note
+#+begin_info
+  When the man falls from the top of a redwood tree he will die.
+  Someone who just started running will not beat Usain Bolt in a race.
+  Humming is equivalent to singing.
+  
+  Jam tastes good. 
+  False is true.
+  An enemy could be hiding in that bush.
+#+end_info
+
+** TODO UWM
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:52]--[2018-05-04 Fri 15:55] =>  0:03
+   :END:
+#+begin_note
+  Express in English the negation of each of these propositions:
+
+  1. Two plus two equals four.
+  2. Two plus one is less than four.
+  3. Toronto is the capital of Germany.
+  4. A total eclipse happens infrequently.
+  5. Special measures must be taken to deal with the current situation.
+:HINT:
+  Do /not/ just prefix each proposition with \lsquo{}It is not the case that\rsquo.
+:END:
+#+end_note
+#+begin_info
+  1. Two plus Two does not equal -4
+  2. Two plus two is not less than four
+  3. Toronto is not the capital of Ontario.
+  4. A total eclipse does not happen frequently.
+  5. Ignore the current situation. Carry on as usual. 
+#+end_info
+
+** TODO UOX
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 15:57]--[2018-05-04 Fri 16:02] =>  0:05
+   :END:
+#+begin_note
+  What other special forms besides =if= does elisp have for doing conditionals?
+  Why are they called \ldquo{}special\rdquo?
+:HINT:
+  - Hint :: You can find at least six.
+:END:
+#+end_note
+#+begin_info
+  - and
+  - or
+  - not
+  - xor
+  - when test
+  - unless
+  - cond
+  These are special because they are maros and not built into the language. 
+#+end_info
+
+** TODO UIN
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 16:03]--[2018-05-04 Fri 16:07] =>  0:04
+   :END:
+#+begin_note
+  What is the set difference between the set of letters in the English alphabet
+  and the set of letters in the Hawaiian alphabet?
+#+end_note
+#+begin_info
+  The hawaiin alphabet has only 17 letters while ours has 26. The letters C F G J Q S X Y and Z are not present in the Hawaiin alphabet.
+#+end_info
+
+** TODO OQT
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 16:08]--[2018-05-04 Fri 16:17] =>  0:09
+   :END:
+#+begin_note
+  Let /p/ and /q/ be the propositions:
+
+  /p/: I studied.
+
+  /q/: I got an A on the test.
+
+  Express each of the propositions below as an English sentence:
+  1. /p/ \rarr /q/
+  2. \not /p/ \lor \not /q/
+  3. \not /p/ \rarr (p \lor q)
+  4. \not /p/ \rarr \not /q/
+#+end_note
+#+begin_info
+  1. If I studeid then I got an A on the test.
+  2. I did not study or get an F on the test.
+  3. If i did not study then I will study or get an A on the test.
+  4. If i did not study then I did not get an A on the test. 
+#+end_info
+
+** TODO OLH
+   :LOGBOOK:
+   CLOCK: [2018-05-04 Fri 16:18]--[2018-05-04 Fri 16:25] =>  0:07
+   :END:
+#+begin_note
+  Use truth tables to verify the associative laws.
+  1. $(p \vee q) \vee r \equiv p \vee (q \vee r)$
+  2. $(p \wedge q) \wedge r \equiv p \wedge (q \wedge r)$
+#+end_note
+#+begin_info
+  1. p | q | r | (p or q) or r | p or (q or r)
+     0   0   0         0               0
+     1   0   0         1               1
+     0   1   0         1               1
+     0   0   1         1               1
+     1   0   1         1               1
+     1   1   0         1               1
+     0   1   1         1               1
+     1   1   1         1               1
+
+  2. p | q | r | (p and q) and r | p and (q and r)
+     0   0   0         0               0
+     1   0   0         0               0
+     0   1   0         0               0
+     0   0   1         0               0
+     1   0   1         0               0
+     1   1   0         0               0
+     0   1   1         0               0
+     1   1   1         1               1
+#+end_info
 
 * DO NOT INCLUDE THIS PART BELOW FOR THE LAB
 * ######## FOR PUZZLES AND PROJECTS #########
